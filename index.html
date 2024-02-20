@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scelta del Giorno</title>
+    <!-- Collegamento al tuo file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+      <div class="header-container">
+          <div class="logo-container">
+              <img src="logo.png" alt="Logo">
+          </div>
+          
+      </div>
+  </header>
+<div class="day-buttons">
+    <button onclick="openPage('giorno_uno.html')">GIORNO 1</button>
+    <button onclick="openPage('giorno_due.html')">GIORNO 2</button>
+    <button onclick="openPage('giorno_tre.html')">GIORNO 3</button>
+</div>
+
+<script>
+    function openPage(page) {
+        window.location.href = page;
+    }
+</script>
+
+</body>
+</html>
