@@ -78,6 +78,8 @@ header {
 }
 
 
+/* ... (Altri stili rimangono invariati) */
+
 .day-buttons {
     display: flex;
     flex-direction: column;
@@ -86,7 +88,7 @@ header {
     justify-content: center;
 }
 
-button {
+.day-buttons button {
     padding: 20px;
     margin: 10px;
     background-color: #363636;
@@ -98,6 +100,69 @@ button {
     width: 200px;
 }
 
+.day-buttons button:hover {
+    background-color: #454545;
+}
+
+/* ... (Altri stili rimangono invariati) */
+
+
+
+/* Stili del timer container */
+#timer-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #363636;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+}
+
+#timer {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    background-color: #2c2c2c;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
 button:hover {
     background-color: #454545;
+}
+
+/* Nasconde il timer all'avvio */
+.hidden {
+    display: none;
+}
+
+/* Stili differenziati per il container del timer */
+#timer-container.different-style {
+    background-color: #ff6600; /* Esempio di un colore diverso */
+    color: #000; /* Testo nero */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow più scuro */
+}
+
+.exercise-container {
+    position: relative;
+}
+
+.weight-indicator {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    background-color: #ff0000; /* Colore di sfondo (rosso) */
+    color: #ffffff; /* Colore del testo (bianco) */
+    font-weight: bold;
 }
